@@ -1,11 +1,8 @@
 
-
-const Page = require('./Page');
-
 /**
  * sub page containing specific selectors and methods for a specific page
  */
-class LoginPage extends Page {
+class LoginPage {
     /**
      * define selectors using getter methods
      */
@@ -33,7 +30,7 @@ class LoginPage extends Page {
      * overwrite specific options to adapt it to page object
      */
     open() {
-        return browser.url('');
+        return browser.url('./');
     }
 }
 

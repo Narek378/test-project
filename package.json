@@ -1,20 +1,20 @@
 {
-    "name": "webdriverio-tests",
-    "version": "0.1.0",
-    "private": true,
-    "devDependencies": {
-        "@wdio/allure-reporter": "^7.16.11",
-        "@wdio/cli": "^7.16.12",
-        "@wdio/local-runner": "^7.16.12",
-        "@wdio/mocha-framework": "^7.16.11",
-        "@wdio/spec-reporter": "^7.16.11",
-        "@wdio/sync": "^7.16.12",
-        "wdio-chromedriver-service": "^7.2.2"
-    },
-    "scripts": {
-        "test": "wdio wdio.conf.js"
-    },
-    "dependencies": {
-        "chromedriver": "^97.0.4"
-    }
+  "name": "test-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Narek378/test-project.git",
+  "author": "narek378 <narvladhairo@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@wdio/cli": "^7.19.1",
+    "@wdio/sync": "^7.19.1"
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "^7.19.1",
+    "@wdio/local-runner": "^7.19.1",
+    "@wdio/mocha-framework": "^7.19.1",
+    "@wdio/spec-reporter": "^7.19.1",
+    "chromedriver": "^99.0.0",
+    "wdio-chromedriver-service": "^7.3.2"
+  }
 }

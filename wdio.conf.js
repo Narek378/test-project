@@ -60,7 +60,7 @@ exports.config = {
         'goog:chromeOptions': {
             // to run chrome headless the following flags are required
             // (see https://developers.google.com/web/updates/2017/04/headless-chrome)
-             args: [ '--disable-web-security'],
+           //  args: [ '--disable-web-security'],
             },
         acceptInsecureCerts: true,
 
@@ -100,7 +100,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://www.bilkamadudafhuset.dk',
+    baseUrl: 'https://yarnpkg.com/package/@wdio/sync',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -236,7 +236,7 @@ exports.config = {
      */
     afterTest: async function(test, context, { error, result, duration, passed, retries }) {
         if (!passed) {
-            await browser.takeScreenshot();
+             browser.takeScreenshot();
         }
     },
 
